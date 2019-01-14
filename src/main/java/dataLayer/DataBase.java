@@ -1,0 +1,45 @@
+/*
+* Class name:- DataBase
+*
+* Version:- 0.0.1-SNAPSHOT
+*
+* Copyright notice
+* 
+* Author info:- Pooja3149914
+*
+* Creation date:- January 11, 2019 at 01:45:16 PM
+*
+* Last updated By:- Pooja3149914
+*
+* Last updated Date:- January 14, 2019 at 08:41:44 PM
+*
+*/
+
+package dataLayer;
+
+import java.util.*;
+
+import bussinessLayer.Item;
+
+public class DataBase {
+	private static DataBase dataBase = null;
+	private List<Item> itemList = new ArrayList<Item>();
+	
+	private DataBase(){
+		
+	}
+	
+	public static DataBase getDatabase(){
+				
+		if( dataBase== null)
+				dataBase = new DataBase();
+		return dataBase;
+	}
+		
+	public void addToList(Item item){
+			itemList.add(item);
+		}
+	public List<Item> showItems(){
+	    return itemList;
+	}
+}
