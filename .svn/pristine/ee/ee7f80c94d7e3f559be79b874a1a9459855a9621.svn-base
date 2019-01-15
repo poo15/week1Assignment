@@ -51,7 +51,7 @@ public class App
 					}
 					check=1;
 				}catch(Exception e){
-					System.out.println("Price can't be 0 or less");
+					System.out.println("Price can't be less than 0");
 				}
 				
 			}while(check==0);
@@ -64,7 +64,7 @@ public class App
 				try{
 					
 					quantity=sc.nextInt();
-					if(quantity < 0){
+					if(quantity <= 0){
 						
 						throw new Exception();
 					}
