@@ -1,0 +1,7 @@
+package bissLayer;
+
+public class ItemTypeException extends Exception{
+		public ItemTypeException(String itemTypeException){
+			super(itemTypeException);
+		}
+}

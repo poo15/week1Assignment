@@ -1,0 +1,9 @@
+package bissLayer;
+
+public class NumberException extends Exception{
+	
+	public NumberException(String numberException){
+		super(numberException);
+	}
+
+}
